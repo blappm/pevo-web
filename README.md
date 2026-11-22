@@ -3,7 +3,7 @@
 Website for **PEVO Pilot** -- open source energy management.
 
 Built with [Hugo](https://gohugo.io) and published at
-https://blappm.github.io/pevo-web/ on every push to `main`
+https://pevo.io/ on every push to `main`
 (see `.github/workflows/pages.yml`).
 
 ## Inhalte bearbeiten
@@ -51,7 +51,7 @@ title: "Impressum"
 Hier steht der Text in **Markdown**.
 ```
 
-Sie ist dann unter `https://blappm.github.io/pevo-web/impressum/` erreichbar.
+Sie ist dann unter `https://pevo.io/impressum/` erreichbar.
 
 **Wenn etwas schiefgeht:** Ist eine Datei fehlerhaft, bleibt die alte
 Version online. Unter *Actions* erscheint der Lauf rot; die Fehlermeldung
@@ -63,4 +63,4 @@ nennt die betroffene Datei.
 hugo server
 ```
 
-and open http://localhost:1313/pevo-web/. Requires Hugo 0.170.0 or newer.
+and open http://localhost:1313/. Requires Hugo 0.170.0 or newer.

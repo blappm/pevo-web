@@ -1,4 +1,4 @@
-baseURL = 'https://blappm.github.io/pevo-web/'
+baseURL = 'https://pevo.io/'
 locale = 'de'
 defaultContentLanguage = 'de'
 title = 'PEVO Pilot - Open Source Energiemanagement'

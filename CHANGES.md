@@ -12,3 +12,6 @@
  - The "Community Forum" button at the bottom of the page led to the
    GitHub start page; it is now labelled "Fragen & Ideen auf GitHub" and
    opens the PEVO issue tracker.
+
+ - The website is now at https://pevo.io (also www.pevo.io); the old
+   address https://blappm.github.io/pevo-web/ forwards there.
