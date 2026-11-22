@@ -1,0 +1,28 @@
+baseURL = 'https://blappm.github.io/pevo-web/'
+locale = 'de'
+defaultContentLanguage = 'de'
+title = 'PEVO Pilot - Open Source Energiemanagement'
+disableKinds = ['taxonomy', 'term', 'rss']
+
+# Site-wide texts and links. Section texts live in content/home/.
+[params]
+  brand = 'PEVO'
+  brandSuffix = 'Pilot'
+  githubURL = 'https://github.com/blappm/pevo'
+  sponsorURL = 'https://github.com/blappm/pevo'
+  footerLine1 = '© 2026 PEVO Pilot. Open Source unter BSD-Lizenz.'
+  footerLine2 = 'Sicher. Lokal. Unabhängig. ☀️'
+
+# Links in the top navigation bar (hidden on small screens).
+[[menus.main]]
+  name = 'Features'
+  url = '/#features'
+  weight = 10
+[[menus.main]]
+  name = 'Kompatibilität'
+  url = '/#tech'
+  weight = 20
+
+# Keep straight quotes and "--" exactly as typed.
+[markup.goldmark.extensions.typographer]
+  disable = true
