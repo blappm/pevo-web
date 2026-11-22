@@ -5,9 +5,8 @@ weight: 60
 
 title: "Bereit für maximale Autarkie?"
 button:
-  text: "Community Forum"
+  text: "Fragen & Ideen auf GitHub"
   icon: chat-right-text
-  # TODO: richtige Adresse des Forums eintragen.
-  url: "https://github.com"
+  url: "https://github.com/blappm/pevo/issues"
 ---
-Bringe PEVO Pilot jetzt auf deine eigene Hardware oder diskutiere mit Entwicklern im GitHub Forum!
+Bringe PEVO Pilot jetzt auf deine eigene Hardware. Fragen, Fehlerberichte und Ideen sind auf GitHub willkommen!

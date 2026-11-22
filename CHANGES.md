@@ -8,3 +8,7 @@
 
  - On phones the page could be dragged sideways by a few millimetres,
    showing an empty strip on the right; it now fits the screen width.
+
+ - The "Community Forum" button at the bottom of the page led to the
+   GitHub start page; it is now labelled "Fragen & Ideen auf GitHub" and
+   opens the PEVO issue tracker.
