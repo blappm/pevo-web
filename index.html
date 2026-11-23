@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PEVO – Open-Source EMS &amp; Batterie-Steuerung</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation mit PEVO-Logo -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
+        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+          <rect width="24" height="7" fill="#3178c6"/>
+          <rect y="7" width="24" height="3.5" fill="#facc15"/>
+          <rect y="10.5" width="24" height="2.5" fill="#3178c6"/>
+          <rect y="13" width="24" height="3.5" fill="#facc15"/>
+          <rect y="16.5" width="24" height="2.5" fill="#3178c6"/>
+          <rect y="19" width="24" height="3.5" fill="#facc15"/>
+          <rect y="22.5" width="24" height="1.5" fill="#3178c6"/>
+        </svg>
+        <span>PEVO</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-3">
+          <li class="nav-item"><a class="nav-link" href="#warum">Warum PEVO</a></li>
+          <li class="nav-item"><a class="nav-link" href="#anders">Was PEVO anders macht</a></li>
+          <li class="nav-item"><a class="nav-link" href="#oberflaeche">Oberfläche (6)</a></li>
+          <li class="nav-item"><a class="nav-link" href="#aktuelles">Aktuelles</a></li>
+          <li class="nav-item"><a class="btn btn-outline-primary btn-sm mt-1" href="https://github.com/blappm/pevo" target="_blank">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero-section py-5">
+    <div class="container py-lg-4">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <span class="badge bg-primary mb-3">Open-Source EMS · Kein Abo · 100 % Lokal</span>
+          <h1 class="display-5 fw-bold mb-3">Open-Source EMS &amp; Batterie-Steuerung.</h1>
+          <p class="lead text-secondary mb-4">
+            Lokales Energiemonitoring mit Ertragsvorhersage, prädiktiver Stromhandel 2027, EVCC-Integration und ZEV-Abrechnung – ohne Cloud-Abhängigkeit.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#oberflaeche" class="btn btn-primary btn-lg">Oberfläche entdecken</a>
+            <a href="#anders" class="btn btn-outline-secondary btn-lg">Was PEVO anders macht</a>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="card card-dark shadow-lg overflow-hidden shot-card" onclick="openLightbox(0)">
+            <div class="shot-img-wrap">
+              <img src="img/screenshot-1.png" alt="PEVO Dashboard">
+              <span class="badge bg-dark bg-opacity-75 border border-secondary position-absolute bottom-0 end-0 m-3">
+                ⛶ Klicken für Vollbild
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Warum PEVO & Was ist PEVO (evcc-Stil 3x3 Raster ohne Kästen) -->
+  <section id="warum" class="py-5">
+    <div class="container py-lg-4">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Warum PEVO entwickelt wurde</h2>
+        <p class="text-secondary">Keine Blackbox, keine laufenden Gebühren – sondern Bewährtes intelligent verknüpft.</p>
+      </div>
+      <div class="row g-4 g-lg-5">
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-item">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            <div>
+              <h3 class="h5 fw-bold mb-1">Open-Source, keine Blackbox</h3>
+              <p class="text-secondary small mb-0">Volle Transparenz über Regeln, Prognosen und Optimierungspläne – offen für Installateure und DIY-Selbstbauer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-item">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <div>
+              <h3 class="h5 fw-bold mb-1">Lokale Daten statt Cloud</h3>
+              <p class="text-secondary small mb-0">Energiemonitoring und Steuerung laufen komplett lokal ohne Cloudanbindung und ohne laufendes Abo-Modell.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-item">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            <div>
+              <h3 class="h5 fw-bold mb-1">Das Rad nicht neu erfinden</h3>
+              <p class="text-secondary small mb-0"><a href="https://evcc.io" target="_blank" class="text-info">EVCC</a> ist integraler Bestandteil von PEVO. Schnittstellen wie die MQTT-Unterstützung sorgen für maximale Integration in bestehende Umgebungen.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-item">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+            <div>
+              <h3 class="h5 fw-bold mb-1">Vollautomatischer Stromhandel</h3>
+              <p class="text-secondary small mb-0">Vorausschauende 48h-Lade- und Entladepläne (Lineare Optimierung) für dynamische Stromtarife ab 2027.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-item">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            <div>
+              <h3 class="h5 fw-bold mb-1">Netzüberwachung On- &amp; Off-Grid</h3>
+              <p class="text-secondary small mb-0">Lückenlose Überwachung von Netzspannung, Frequenz und AC-Lasten im Netz- sowie im Ersatzstrombetrieb.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-item">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            <div>
+              <h3 class="h5 fw-bold mb-1">Integrierte ZEV-Abrechnung</h3>
+              <p class="text-secondary small mb-0">Lastgang-Erfassung und automatische Rechnungsstellung für Zusammenschlüsse zum Eigenverbrauch direkt im System.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Was ist bei PEVO anders als bei anderen EMS? (Folien 7 & 8) -->
+  <section id="anders" class="py-5 stat-bar border-top">
+    <div class="container py-lg-3">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-5">
+          <span class="badge bg-warning text-dark mb-2">Der entscheidende Unterschied</span>
+          <h2 class="fw-bold mb-3">Was bei PEVO anders ist als bei anderen EMS</h2>
+          <p class="text-secondary mb-0">
+            Spezialaufgaben sind nicht starr einprogrammiert, sondern direkt in das Regelsystem integriert – und lassen sich <strong>zeitlich sowie saisonal</strong> ab- und zuschalten.
+          </p>
+        </div>
+        <div class="col-lg-7">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <div class="card card-dark p-3 h-100">
+                <h3 class="h6 fw-bold text-info mb-1">Beispiel: Tiefentladeschutz in der Nacht</h3>
+                <p class="small text-secondary mb-0">Verhindert ineffiziente Kleinst-Entladungen und schützt die Batterie gezielt in Schwachlastzeiten.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card card-dark p-3 h-100">
+                <h3 class="h6 fw-bold text-info mb-1">Beispiel: Batterie-Synchronisation</h3>
+                <p class="small text-secondary mb-0">Automatische Kalibrierungsladung im Niedertarif nach 30 Tage ohne 100% Aufladung.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card card-dark p-3 h-100">
+                <h3 class="h6 fw-bold text-info mb-1">Beispiel: Saisonal unterschiedliche Batterie-Ladestände (Sommer / Winter)</h3>
+                <p class="small text-secondary mb-0">Automatische Anpassung von DoD- und Notstrom-Reserven je nach Jahreszeit.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card card-dark p-3 h-100">
+                <h3 class="h6 fw-bold text-info mb-1">Beispiel: Stromhandel nur für die ertragsreichen Monate </h3>
+                <p class="small text-secondary mb-0">Aktivierte Lade-/Entladepläne für dynamische Tarife.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Abwechselnde Screenshot-Showcases (clever-PV-Stil, per script.js befüllt) -->
+  <section id="oberflaeche" class="py-5 ">
+    <div class="container py-lg-4">
+      <div class="text-center mb-5">
+        <h2 class="display-6 fw-bold">Einblicke in die Oberfläche</h2>
+        <p class="text-secondary">Klicke auf einen Screenshot für die bildschirmfüllende Vollansicht (Pfeiltasten zum Blättern).</p>
+      </div>
+      <div id="showcaseContainer" class="d-grid gap-5"></div>
+    </div>
+  </section>
+
+  <!-- Aktuelles & Updates (OpenEMS-Stil, per script.js befüllt) -->
+  <section id="aktuelles" class="py-5">
+    <div class="container py-lg-3">
+      <div class="d-flex justify-content-between align-items-end mb-4">
+        <div>
+          <h2 class="fw-bold mb-1">Aktuelles &amp; Releases</h2>
+          <p class="text-secondary mb-0">Neuigkeiten aus der Entwicklung, Integrationen und Termine.</p>
+        </div>
+        <a href="https://github.com/blappm/pevo" target="_blank" class="btn btn-outline-primary btn-sm">Alle Updates auf GitHub →</a>
+      </div>
+      <div class="row g-4" id="newsGrid"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 border-top border-secondary text-center text-secondary small">
+    <div class="container">
+      PEVO – Open-Source EMS &amp; Batterie-Steuerung · <a href="https://github.com/blappm/pevo" class="text-primary">GitHub</a>
+    </div>
+  </footer>
+
+  <!-- Bildschirmfüllende Lightbox -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lb-btn lb-close" onclick="closeLightbox()" title="Schliessen">&times;</button>
+    <button class="lb-btn lb-prev" onclick="changeSlide(-1)" title="Zurück">&#10094;</button>
+    <button class="lb-btn lb-next" onclick="changeSlide(1)" title="Weiter">&#10095;</button>
+    <div class="lb-stage" onclick="if(event.target===this) closeLightbox()">
+      <img id="lbImg" src="" alt="">
+    </div>
+    <div class="lb-caption">
+      <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-2">
+        <div>
+          <span id="lbCounter" class="badge bg-primary me-2"></span>
+          <strong id="lbTitle" class="fs-5"></strong>
+          <p id="lbVisible" class="mb-1 small text-light mt-1"></p>
+          <p id="lbAction" class="mb-0 small text-secondary"></p>
+        </div>
+        <span class="text-secondary small text-nowrap">ESC zum Schliessen · Pfeiltasten zum Blättern</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
