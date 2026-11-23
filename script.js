@@ -59,7 +59,7 @@ const newsItems = [
   {
     date: "28.11.2026",
     category: "Selbstbauertagung",
-    title: "PEVO wird an der Selbstbauertagung offiziell vorgestellt.",
+    title: "PEVO wird an der Selbstbauertagung in Olten offiziell vorgestellt.",
     text: "<A HREF='https://www.vese.ch/pv-praxis-tagung-2026/'>Link zur Tagung</A>"
   }
 ];
