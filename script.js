@@ -48,7 +48,7 @@ const newsItems = [
     date: "September 2026",
     category: "Autopilot",
     title: "Automatische Steuerung (Autopilot) bereit für die dynamischen EPEX-Tarife",
-    text: "Nach einer Intensiven Testphase mit Test von diversen Edge-Cases ist die vollautomatische Batteriesteuerung nun einsatzbereit. Ein Laden der Batterie mit Netzstrom ist aber nicht vorgesehen."
+    text: "Nach einer intensiven Testphase mit Tests von diversen Edge-Cases ist die vollautomatische Batteriesteuerung nun einsatzbereit. Ein Laden der Batterie mit Netzstrom ist nicht vorgesehen, Entladen von Batteriestrom ins Netz ist möglich."
   },
   {
     date: "Oktober 2026",
