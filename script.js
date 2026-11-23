@@ -45,22 +45,22 @@ const screenshots = [
 
 const newsItems = [
   {
-    date: "November 2026",
+    date: "September 2026",
     category: "Autopilot",
-    title: "48h-Solver bereit für dynamische EPEX-Tarife",
-    text: "Automatische Einbindung von Day-Ahead-Börsenpreisen (13:15 Uhr Update) inklusive Batterie-Amortisation und Nacht-Standby-Schutz."
+    title: "Automatische Steuerung (Autopilot) bereit für die dynamischen EPEX-Tarife",
+    text: "Nach einer Intensiven Testphase mit Test von diversen Edge-Cases ist die vollautomatische Batteriesteuerung nun einsatzbereit. Ein Laden der Batterie mit Netzstrom ist aber nicht vorgesehen."
   },
   {
     date: "Oktober 2026",
     category: "Integration",
-    title: "ZEV-Abrechnung & WhatWatt Go Synchronisation",
-    text: "Lastgangdaten von MID-Zählern und WhatWatt Go werden direkt verarbeitet – inklusive PDF-Rechnungserstellung per Klick."
+    title: "ZEV-Abrechnung",
+    text: "Lastgangdaten von MID-Zählern werden direkt verarbeitet – inklusive PDF-Rechnungserstellung per Klick. PV-Strom und Strom aus der Batterie können unterschiedlich bepreist werden."
   },
   {
-    date: "Roadmap",
-    category: "Plugins",
-    title: "Erweiterung der Wechselrichter- & Zähler-Treiber",
-    text: "Neben Sofar Hybrid (Master/Slave) und Shelly/Eastron/Chint folgen weitere Plugins für Huawei und SolarEdge."
+    date: "28.11.2026",
+    category: "Selbstbauertagung",
+    title: "PEVO wird an der Selbstbauertagung offiziell vorgestellt.",
+    text: "<A HREF='https://www.vese.ch/pv-praxis-tagung-2026/'>Link zur Tagung</A>"
   }
 ];
 
