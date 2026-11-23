@@ -54,7 +54,7 @@ const newsItems = [
     date: "Oktober 2026",
     category: "Integration",
     title: "ZEV-Abrechnung",
-    text: "Lastgangdaten von MID-Zählern werden direkt verarbeitet – inklusive PDF-Rechnungserstellung per Klick. PV-Strom und Strom aus der Batterie können unterschiedlich bepreist werden.<br><br> Beispiel für eine generierte <a href='pdf/ZEV_Rechnung_Einlegerwohnung_0bb432f8-7fe9-11f0-905d-8bbc69c02d0d_Q4_2026_prov'>ZEV-Rechnung</a>"
+    text: "Lastgangdaten von MID-Zählern werden direkt verarbeitet – inklusive PDF-Rechnungserstellung per Klick. PV-Strom und Strom aus der Batterie können unterschiedlich bepreist werden.<br><br> Beispiel für eine generierte <a href='pdf/ZEV_Rechnung_Einlegerwohnung_0bb432f8-7fe9-11f0-905d-8bbc69c02d0d_Q4_2026_prov.pdf'>ZEV-Rechnung</a>"
   },
   {
     date: "28.11.2026",
