@@ -9,15 +9,15 @@ const screenshots = [
   {
     file: "img/screenshot-2.png",
     tag: "48H-AUTOPILOT",
-    title: "Lineare Optimierung & Ladepläne",
-    visible: "48h-Prognosekurven für PV-Ertrag, Hausverbrauch, EPEX-Stundenpreise sowie konfigurierte Lade-/Entladefahrpläne.",
+    title: "Lineare Optimierung für die optimale Batterienutzung",
+    visible: "Optimierte 48h-Lade-/Entladepläne für eine bestmögliche Batterienutzung mit PV-Ertragsprognose, Hausverbrauch, EPEX-Stundenpreisen.",
     action: "Berechnet alle fünf Minuten neu, wann Solarstrom gespeichert, direkt verbraucht oder zu Spitzenpreisen eingespeist wird."
   },
   {
     file: "img/screenshot-3.png",
     tag: "REGELWERK",
     title: "Priorisierte EMS-Steuerung",
-    visible: "Priorisierte Regelliste mit 20 Bedingungen und 13 Aktionen.",
+    visible: "Priorisierte Regelverwaltung mit 20 Bedingungen und 13 Aktionen.",
     action: "Wertet Regeln der Reihenfolge nach aus bis eine passt – per Drag-and-Drop sortierbar und als Gruppen schaltbar."
   },
   {
@@ -25,21 +25,21 @@ const screenshots = [
     tag: "NETZANALYSE",
     title: "Netz-Monitoring On-Grid & Off-Grid",
     visible: "Spannungsverlauf L1–L3 in Volt sowie Tabelle mit aktuellen, maximalen und minimalen Werten für Strom und Frequenz.",
-    action: "Zeigt Netzschwankungen im Netz- und Ersatzstrombetrieb."
+    action: "Zeigt Netzschwankungen im Netz- und Ersatzstrombetrieb, ideal bei der Fehlersuche nach Abschaltungen."
   },
   {
     file: "img/screenshot-5.png",
     tag: "TARIFE",
     title: "Tarif-Engine",
-    visible: "Zeitfenster für Hoch-/Niedertarif, Feiertagsregeln, Marktprämien",
-    action: "Tarifverwaltung für manuelle und dynamische Tarife bei Strom-Import, Export und Netz."
+    visible: "Zeitfenster für die jeweiligen Tarife, Feiertagsregeln, Marktprämien",
+    action: "Tarifverwaltung für manuelle oder dynamische Tarife bei Strom-Import, Export und Netz. Es können Tarife und Tarifzeiten mutiert oder neu erfasst werden."
   },
   {
     file: "img/screenshot-6.png",
     tag: "ZEV-Abrechnung",
     title: "ZEV-Abrechnung",
     visible: "Abrechnungstool für ZEV-Teilnehmer.",
-    action: "Erstellt ZEV-Abrechnungen auf Basis von MID-Zählerdaten."
+    action: "Erstellt ZEV-Abrechnungen auf Basis von erfassten MID-Zählerdaten."
   }
 ];
 
