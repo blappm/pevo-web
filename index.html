@@ -31,10 +31,12 @@
         <ul class="navbar-nav ms-auto gap-3">
           <li class="nav-item"><a class="nav-link" href="#warum">Warum PEVO?</a></li>
           <li class="nav-item"><a class="nav-link" href="#was-ist-ein-ems">Was ist ein EMS?</a></li>
-          <li class="nav-item"><a class="nav-link" href="#anders">Was PEVO anders macht</a></li>
+          <li class="nav-item"><a class="nav-link" href="#besser">Wo ist PEVO besser?</a></li>
           <li class="nav-item"><a class="nav-link" href="#oberflaeche">Oberfläche (6)</a></li>
           <li class="nav-item"><a class="nav-link" href="#hardware">Hardware</a></li>
+          <li class="nav-item"><a class="nav-link" href="#evcc">EVCC-Integration</a></li>
           <li class="nav-item"><a class="nav-link" href="#aktuelles">Aktuelles</a></li>
+          <li class="nav-item"><a class="nav-link" href="#mitmachen">Mitmachen!</a></li>
           <li class="nav-item"><a class="btn btn-outline-primary btn-sm mt-1" href="https://github.com/blappm/pevo" target="_blank">GitHub</a></li>
         </ul>
       </div>
@@ -54,7 +56,7 @@
           </p>
           <div class="d-flex flex-wrap gap-3">
             <a href="#oberflaeche" class="btn btn-primary btn-lg">Oberfläche entdecken</a>
-            <a href="#anders" class="btn btn-outline-secondary btn-lg">Was PEVO anders macht</a>
+            <a href="#besser" class="btn btn-outline-secondary btn-lg">Was PEVO besser macht</a>
           </div>
         </div>
         <div class="col-lg-7">
@@ -215,12 +217,12 @@
   </section>
 
   <!-- Was ist bei PEVO anders als bei anderen EMS? (Folien 7 & 8) -->
-  <section id="anders" class="py-5 stat-bar border-top">
+  <section id="besser" class="py-5 stat-bar border-top">
     <div class="container py-lg-3">
       <div class="row align-items-center g-4">
         <div class="col-lg-5">
           <span class="badge bg-warning text-dark mb-2">Der entscheidende Unterschied</span>
-          <h2 class="fw-bold mb-3">Was bei PEVO anders ist als bei anderen EMS</h2>
+          <h2 class="fw-bold mb-3">Was bei PEVO besser gelöst und anders ist als bei anderen EMS</h2>
           <p class="text-secondary mb-0">
             Spezialaufgaben sind nicht starr einprogrammiert, sondern direkt in das Regelsystem integriert – und lassen sich <strong>zeitlich sowie saisonal</strong> ab- und zuschalten. Auch während den Spezialaufgaben kann klar definiert werden, wie sich alle vom EMS gesteuerten Geräte verhalten, ob sie ein- oder ausgeschaltet werden. <BR><BR>
 Die Produktionsvorhersage (Forecasting) wird durch die Analyse des aktuellen Ist-Zustands (Nowcasting) unterstützt. Sämtliche Regeln können als Bedingung von der Vorhersage abhängig geschalten werden. Stimmt die Vorhersage nicht mehr, so wird dann die Regel übersprungen.
@@ -394,6 +396,103 @@ Die Produktionsvorhersage (Forecasting) wird durch die Analyse des aktuellen Ist
     </div>
 </section>
 
+<!-- EVCC INTEGRATION SEKTION -->
+<section id="evcc" class="py-5">
+  <div class="container py-4">
+    <div class="row align-items-center g-5">
+      <!-- Linke Spalte: Erklärung & Architektur -->
+      <div class="col-lg-6">
+        <span class="text-primary fw-bold small text-uppercase">Nahtlose Wallbox-Steuerung</span>
+        <h2 class="display-6 fw-bold mt-1 mb-3">EVCC ist integraler Bestandteil von PEVO</h2>
+        <p class="lead text-muted-pevo mb-3">
+          Für intelligentes Überschussladen muss das Rad nicht neu erfunden werden: <strong>EVCC ist bereits vorinstalliert und immer mit dabei.</strong>
+        </p>
+        <p class="text-muted-pevo mb-4">
+          Das Besondere an der Architektur: <strong>PEVO agiert als virtueller Wechselrichter und Smart-Meter für EVCC.</strong> Statt dass beide Systeme parallel und unkoordiniert auf deine Hardware zugreifen, bildet PEVO die zentrale Datendrehscheibe.
+        </p>
+
+        <div class="d-flex flex-column gap-3">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg xmlns="http://w3.org" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="h6 fw-bold mb-1">Keine Modbus-Kollisionen</h3>
+              <p class="text-muted-pevo small mb-0">
+                PEVO liest Wechselrichter, Batterie und Zähler zentral aus und stellt die Werte sauber gebündelt für EVCC bereit.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg xmlns="http://w3.org" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="h6 fw-bold mb-1">Intelligente Batterie-Priorisierung</h3>
+              <p class="text-muted-pevo small mb-0">
+                Über den virtuellen Wechselrichter steuert PEVO gezielt, ob PV-Überschuss zuerst ins Auto oder in den Hausspeicher fliesst – abgestimmt auf deine Regeln und Strompreise.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg xmlns="http://w3.org" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="h6 fw-bold mb-1">Sofort einsatzbereit &amp; volle Wallbox-Vielfalt</h3>
+              <p class="text-muted-pevo small mb-0">
+                Profitiere direkt ab Werk von hunderten unterstützten Wallboxen und Fahrzeug-Schnittstellen aus dem EVCC-Ökosystem – ganz ohne doppelte Konfiguration.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rechte Spalte: Visuelle Architektur-Karte -->
+      <div class="col-lg-6">
+        <div class="card card-pevo shadow-sm p-4 p-lg-5 bg-white">
+          <div class="text-center mb-4">
+            <span class="badge bg-primary-subtle text-primary border border-primary-subtle mb-2">System-Architektur</span>
+            <h3 class="h5 fw-bold mb-0">So arbeiten PEVO &amp; EVCC zusammen</h3>
+          </div>
+
+          <!-- Ebene 1: Physische Hardware -->
+          <div class="p-3 rounded-3 border bg-light text-center mb-2">
+            <div class="small fw-bold text-uppercase text-muted-pevo mb-1">1. Physische Anlage</div>
+            <div class="fw-semibold text-dark small">PV-Wechselrichter · Batteriespeicher · Smart-Meter</div>
+          </div>
+
+          <div class="text-center text-primary fw-bold my-1">↓ <span class="small fw-normal text-muted-pevo">Modbus / MQTT / HTTP</span></div>
+
+          <!-- Ebene 2: PEVO Zentrale -->
+          <div class="p-3 rounded-3 border border-primary bg-primary-subtle text-center mb-2">
+            <div class="small fw-bold text-uppercase text-primary mb-1">2. PEVO EMS (Zentrale Steuerung)</div>
+            <div class="fw-bold text-dark">Agierender „Virtueller Wechselrichter“</div>
+            <div class="small text-muted-pevo mt-1">48h-Prognose · Regelwerk · Batterie-Management</div>
+          </div>
+
+          <div class="text-center text-primary fw-bold my-1">↓ <span class="small fw-normal text-muted-pevo">Bereitgestellte Mess- &amp; Steuerwerte</span></div>
+
+          <!-- Ebene 3: Integriertes EVCC -->
+          <div class="p-3 rounded-3 border bg-light text-center">
+            <div class="small fw-bold text-uppercase text-muted-pevo mb-1">3. Integriertes EVCC (immer dabei)</div>
+            <div class="fw-semibold text-dark small">Wallboxen · E-Autos · Phasenumschaltung · SOC-Abfrage</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
   <!-- Aktuelles & Updates (OpenEMS-Stil, per script.js befüllt) -->
   <section id="aktuelles" class="py-5">
     <div class="container py-lg-3">
@@ -407,6 +506,86 @@ Die Produktionsvorhersage (Forecasting) wird durch die Analyse des aktuellen Ist
       <div class="row g-4" id="newsGrid"></div>
     </div>
   </section>
+
+<!-- MITMACHEN / COMMUNITY SEKTION -->
+<section id="mitmachen" class="py-5 section-soft">
+  <div class="container py-4">
+    <div class="row mb-5">
+      <div class="col-lg-8">
+        <span class="text-primary fw-bold small text-uppercase">Open-Source &amp; Community</span>
+        <h2 class="display-6 fw-bold mt-1 mb-3">Mitmachen bei PEVO</h2>
+        <p class="lead text-muted-pevo mb-0">
+          PEVO lebt vom Austausch zwischen Entwicklern, Installateuren und Selbstbauern. Egal ob mit Code, Fehlerberichten oder Erfahrung aus der Praxis – jeder Beitrag bringt das Projekt weiter.
+        </p>
+      </div>
+    </div>
+
+    <!-- 3 Säulen zum Mitmachen -->
+    <div class="row g-4 mb-5">
+      <!-- 1. Plugins & Code -->
+      <div class="col-md-4">
+        <div class="card card-pevo shadow-sm h-100 p-4">
+          <div class="feature-icon mb-3">
+            <svg xmlns="http://w3.org" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+            </svg>
+          </div>
+          <h3 class="h5 fw-bold mb-2">Plugins &amp; Entwicklung</h3>
+          <p class="text-muted-pevo small mb-0">
+            Du möchtest neue <strong>Plugins für Wechselrichter, Batteriespeicher oder Smart-Meter</strong> entwickeln? Reiche deine Erweiterungen per Pull-Request ein oder werde direkt Contributor im Projekt.
+          </p>
+        </div>
+      </div>
+
+      <!-- 2. Bugs & Testing -->
+      <div class="col-md-4">
+        <div class="card card-pevo shadow-sm h-100 p-4">
+          <div class="feature-icon mb-3">
+            <svg xmlns="http://w3.org" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
+            </svg>
+          </div>
+          <h3 class="h5 fw-bold mb-2">Fehler melden &amp; verbessern</h3>
+          <p class="text-muted-pevo small mb-0">
+            Du hast einen Bug entdeckt, einen Edge-Case gefunden oder eine Idee zur Optimierung? Melde deine Beobachtungen oder schicke uns direkt einen Fix per <strong>Pull-Request</strong>.
+          </p>
+        </div>
+      </div>
+
+      <!-- 3. Community & Support -->
+      <div class="col-md-4">
+        <div class="card card-pevo shadow-sm h-100 p-4">
+          <div class="feature-icon mb-3">
+            <svg xmlns="http://w3.org" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+            </svg>
+          </div>
+          <h3 class="h5 fw-bold mb-2">Support-Forum &amp; Erfahrung</h3>
+          <p class="text-muted-pevo small mb-0">
+            Für das <strong>geplante Support-Forum</strong> suchen wir engagierte Anwender, die ihr Wissen teilen und andere Nutzer bei Einrichtung, Regeln und Fragen unterstützen.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kontakt-Box -->
+    <div class="card card-pevo shadow-sm p-4 p-lg-5 bg-white">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-8">
+          <h3 class="h4 fw-bold mb-2">Du möchtest Contributor werden oder im Support mithelfen?</h3>
+          <p class="text-muted-pevo mb-0">
+            Schreib mir gerne direkt eine kurze Nachricht – ich freue mich über jeden Austausch und Unterstützung rund um PEVO.
+          </p>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          <a href="mailto:martin.blapp@nashire.com" class="btn btn-primary px-4 py-2 fw-semibold">
+            martin.blapp@nashire.com
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-- Footer -->
   <footer class="py-4 border-top border-secondary text-center text-secondary small">
