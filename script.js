@@ -40,6 +40,13 @@ const screenshots = [
     title: "ZEV-Abrechnung",
     visible: "Abrechnungstool für ZEV-Teilnehmer.",
     action: "Erstellt ZEV-Abrechnungen auf Basis von erfassten MID-Zählerdaten."
+  },
+  {
+    file: "img/screenshot-7.png",
+    tag: "Externer Energie-Monitor",
+    title: "Externer Energie-Monitor",
+    visible: "Externer Energie-Monitor auf einen zusätzlichen HTTP-Port für den Kiosk-Modus auf Präsentation-Displays",
+    action: "Zeigt das Echtzeit-Dashboard mit Ertrags- und Bezugsprognose und effektivem Ertrag/Bezug"
   }
 ];
 
