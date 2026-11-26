@@ -43,15 +43,15 @@ const screenshots = [
   },
   {
     file: "img/screenshot-6.png",
-    tag: "ZEV-Abrechnung",
+    tag: "ZEV",
     title: "ZEV-Abrechnung",
     visible: "Abrechnungstool für ZEV-Teilnehmer.",
     action: "Erstellt ZEV-Abrechnungen auf Basis von erfassten MID-Zählerdaten."
   },
   {
     file: "img/screenshot-9.png",
-    tag: "Geräte-Auswahl",
-    title: "Geräte-Auswahl",
+    tag: "KONFIGURATION",
+    title: "Elegante Geräte-Auswahl",
     visible: "Verfügbare Geräte im lokalen Ethernet. Die rot markierten Einträge sind vom Modbus-RTU Proxy",
     action: "Scannt das lokale Netz und stellt die gefundene Geräte sichtbar dar."
   },
