@@ -14,7 +14,7 @@ const screenshots = [
     action: "Berechnet alle fünf Minuten neu, wann Solarstrom gespeichert, direkt verbraucht oder zu Spitzenpreisen eingespeist wird."
   },
   {
-    file: "img/screenshot-7.png",
+    file: "img/screenshot-8.png",
     tag: "48H-AUTOPILOT (Berechnung)",
     title: "Lineare Optimierung für die optimale Batterienutzung",
     visible: "Rohdaten: Optimierte 48h-Lade-/Entladepläne für eine bestmögliche Batterienutzung mit PV-Ertragsprognose, Hausverbrauch, EPEX-Stundenpreisen.",
