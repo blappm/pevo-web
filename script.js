@@ -45,8 +45,8 @@ const screenshots = [
     file: "img/screenshot-7.png",
     tag: "Externer Energie-Monitor",
     title: "Externer Energie-Monitor",
-    visible: "Externer Energie-Monitor auf einen zusätzlichen HTTP-Port für den Kiosk-Modus auf Präsentation-Displays",
-    action: "Zeigt das Echtzeit-Dashboard mit Ertrags- und Bezugsprognose und effektivem Ertrag/Bezug"
+    visible: "Externer Full-Screen Energie-Monitor",
+    action: "Zeigt das Echtzeit-Dashboard mit Ertrags- und Bezugsprognose und effektivem Ertrag/Bezug auf einen zusätzlichen HTTP-Port für den Kiosk-Modus auf Präsentation-Displays"
   }
 ];
 
