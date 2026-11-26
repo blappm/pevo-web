@@ -9,14 +9,14 @@ const screenshots = [
   {
     file: "img/screenshot-8.png",
     tag: "48H-AUTOPILOT (Berechnung)",
-    title: "Lineare Optimierung mit scipy.optimize() für die optimale Batterienutzung",
+    title: "Lineare Optimierung für die optimale Batterienutzung",
     visible: "Rohdaten für die Steuerung: Optimierte 48h-Lade-/Entladepläne für eine bestmögliche Batterienutzung mit PV-Ertragsprognose, Hausverbrauch, EPEX-Stundenpreisen.",
     action: "Berechnet alle fünf Minuten neu, wann Solarstrom gespeichert, direkt verbraucht oder zu Spitzenpreisen aus der Batterie eingespeist wird."
   },
   {
     file: "img/screenshot-2.png",
     tag: "48H-AUTOPILOT (Visualisierung)",
-    title: "Die optimale Batterienutzung auf einen Blick mit Chart.js",
+    title: "Darstellung eines oder mehrerer 48h-Lade-/Entladepläne",
     visible: "Visualisierung: Optimierte 48h-Lade-/Entladepläne für eine bestmögliche Batterienutzung mit PV-Ertragsprognose, Hausverbrauch, EPEX-Stundenpreisen.",
     action: "Stellt einen oder mehrere Lade-/Entladepläne für die nächsten 48 Stunden grafisch dar, ideal auch für Simulationen von verschiedenen Batterien oder Vergleiche zwischen den Ladeplänen."
   },
