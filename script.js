@@ -7,18 +7,18 @@ const screenshots = [
     action: "Überwacht alle Leistungsflüsse alle 2-3 Sekunden und stellt die wichtigsten Kennzahlen dar. Regelgruppen lassen sich auf dem unteren Teil des Dashboards ganz simpel ein- und ausschalten."
   },
   {
-    file: "img/screenshot-2.png",
-    tag: "48H-AUTOPILOT (Visualisierung)",
-    title: "Die optimale Batterienutzung auf einen Blick mit Chart.js",
-    visible: "Visualisierung: Optimierte 48h-Lade-/Entladepläne für eine bestmögliche Batterienutzung mit PV-Ertragsprognose, Hausverbrauch, EPEX-Stundenpreisen.",
-    action: "Berechnet alle fünf Minuten neu, wann Solarstrom gespeichert, direkt verbraucht oder zu Spitzenpreisen eingespeist wird."
-  },
-  {
     file: "img/screenshot-8.png",
     tag: "48H-AUTOPILOT (Berechnung)",
     title: "Lineare Optimierung mit scipy.optimize() für die optimale Batterienutzung",
     visible: "Rohdaten für die Steuerung: Optimierte 48h-Lade-/Entladepläne für eine bestmögliche Batterienutzung mit PV-Ertragsprognose, Hausverbrauch, EPEX-Stundenpreisen.",
-    action: "Berechnet alle fünf Minuten neu, wann Solarstrom gespeichert, direkt verbraucht oder zu Spitzenpreisen eingespeist wird."
+    action: "Berechnet alle fünf Minuten neu, wann Solarstrom gespeichert, direkt verbraucht oder zu Spitzenpreisen aus der Batterie eingespeist wird."
+  },
+  {
+    file: "img/screenshot-2.png",
+    tag: "48H-AUTOPILOT (Visualisierung)",
+    title: "Die optimale Batterienutzung auf einen Blick mit Chart.js",
+    visible: "Visualisierung: Optimierte 48h-Lade-/Entladepläne für eine bestmögliche Batterienutzung mit PV-Ertragsprognose, Hausverbrauch, EPEX-Stundenpreisen.",
+    action: "Stellt einen oder mehrere Lade-/Entladepläne für die nächsten 48 Stunden grafisch dar, ideal auch für Simulationen."
   },
   {
     file: "img/screenshot-3.png",
