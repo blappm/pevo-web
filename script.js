@@ -52,7 +52,7 @@ const screenshots = [
     file: "img/screenshot-9.png",
     tag: "KONFIGURATION",
     title: "Elegante Geräte-Auswahl",
-    visible: "Verfügbare Geräte im lokalen Ethernet. Die rot markierten Einträge sind vom Modbus-RTU Proxy",
+    visible: "Verfügbare Geräte im lokalen Ethernet. Die rot markierten Einträge sind vom Modbus-RTU Proxy, es sind also zwei RS485 Sticks in diesem PEVO-Setup eingesteckt",
     action: "Scannt das lokale Netz und stellt die gefundene Geräte sichtbar dar."
   },
   {
