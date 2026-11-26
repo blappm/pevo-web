@@ -18,7 +18,7 @@ const screenshots = [
     tag: "48H-AUTOPILOT (Visualisierung)",
     title: "Die optimale Batterienutzung auf einen Blick mit Chart.js",
     visible: "Visualisierung: Optimierte 48h-Lade-/Entladepläne für eine bestmögliche Batterienutzung mit PV-Ertragsprognose, Hausverbrauch, EPEX-Stundenpreisen.",
-    action: "Stellt einen oder mehrere Lade-/Entladepläne für die nächsten 48 Stunden grafisch dar, ideal auch für Simulationen."
+    action: "Stellt einen oder mehrere Lade-/Entladepläne für die nächsten 48 Stunden grafisch dar, ideal auch für Simulationen von verschiedenen Batterien oder Vergleiche zwischen den Ladeplänen."
   },
   {
     file: "img/screenshot-3.png",
