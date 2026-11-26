@@ -2,9 +2,9 @@ const screenshots = [
   {
     file: "img/screenshot-1.png",
     tag: "ECHTZEIT-MONITORING",
-    title: "Dashboard & Kiosk-Modus",
-    visible: "Animierter Energiefluss zwischen PV-Strings, Batterie, Hausverbrauch und Netz. Anzeige der Regelgruppen/Features.",
-    action: "Überwacht alle Leistungsflüsse alle 2-3 Sekunden und stellt die wichtigsten Kennzahlen dar. Regeln lassen sich so ganz simpel- ein und ausschalten."
+    title: "Dashboard und Schaltfläche",
+    visible: "Animierter Energiefluss zwischen PV-Strings, Batterie, Hausverbrauch und Netz. Anzeige und Schaltfläche der Regelgruppen/Features.",
+    action: "Überwacht alle Leistungsflüsse alle 2-3 Sekunden und stellt die wichtigsten Kennzahlen dar. Regelgruppen lassen sich auf dem unteren Teil des Dashboards ganz simpel- ein und ausschalten."
   },
   {
     file: "img/screenshot-2.png",
