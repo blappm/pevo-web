@@ -49,6 +49,13 @@ const screenshots = [
     action: "Erstellt ZEV-Abrechnungen auf Basis von erfassten MID-Zählerdaten."
   },
   {
+    file: "img/screenshot-9.png",
+    tag: "Geräte-Auswahl",
+    title: "Geräte-Auswahl",
+    visible: "Verfügbare Geräte im lokalen Ethernet. Die rot markierten Einträge sind vom Modbus-RTU Proxy",
+    action: "Scannt das lokale Netz und stellt die gefundene Geräte sichtbar dar."
+  },
+  {
     file: "img/screenshot-7.png",
     tag: "Externer Energie-Monitor",
     title: "Externer Energie-Monitor",
