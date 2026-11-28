@@ -11,7 +11,8 @@ const screenshots = [
     tag: "48H-AUTOPILOT (Berechnung)",
     title: "Lineare Optimierung für die optimale Batterienutzung",
     visible: "Rohdaten für die Steuerung: Optimierte 48h-Lade-/Entladepläne für eine bestmögliche Batterienutzung mit PV-Ertragsprognose, Hausverbrauch, EPEX-Stundenpreisen.",
-    action: "Berechnet alle fünf Minuten neu, wann Solarstrom gespeichert, direkt verbraucht oder zu Spitzenpreisen aus der Batterie eingespeist wird."
+    action: "Berechnet alle fünf Minuten neu, wann Solarstrom gespeichert, direkt verbraucht oder zu Spitzenpreisen aus der Batterie eingespeist wird.",
+    githubUrl: "https://github.com/blappm/pevo/blob/main/src/linopt-battery/linopt-battery.py"
   },
   {
     file: "img/screenshot-2.png",
@@ -92,6 +93,10 @@ function initPage() {
   if (container) {
     container.innerHTML = screenshots.map((s, idx) => {
       const reverseClass = idx % 2 === 1 ? "flex-lg-row-reverse" : "";
+      const githubBtn = s.githubUrl
+        ? `<a href="${s.githubUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">Sourcecode auf GitHub öffnen</a>`
+        : "";
+
       return `
         <div class="row align-items-center g-4 g-lg-5 ${reverseClass}">
           <div class="col-lg-7">
@@ -107,7 +112,10 @@ function initPage() {
             <h3 class="h3 fw-bold mt-1 mb-3">${s.title}</h3>
             <p class="mb-2"><strong class="text-primary">Sichtbar:</strong> ${s.visible}</p>
             <p class="text-muted-pevo mb-4"><strong>Funktion:</strong> ${s.action}</p>
-            <button class="btn btn-outline-primary btn-sm" onclick="openLightbox(${idx})">Screenshot im Vollbild öffnen</button>
+            <div class="d-flex flex-wrap gap-2">
+              <button class="btn btn-outline-primary btn-sm" onclick="openLightbox(${idx})">Screenshot im Vollbild öffnen</button>
+              ${githubBtn}
+            </div>
           </div>
         </div>
       `;
